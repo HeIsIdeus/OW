@@ -1,0 +1,24 @@
+extends layout
+
+block body
+  .login
+      form(method='post', action='')
+        legend Openwindow
+        p.
+          Sign up to discover the best way to organize free time
+        if error
+          .alert.alert-dismissable.alert-danger.login-fail
+            button.close(type='button', data-dismiss='alert') &times;
+            p.
+              #{error}
+        .form-group
+          .col-lg-4
+              input#username.form-control(type='email', name='username', placeholder='Email', autofocus)
+        .form-group
+          .col-lg-4
+            input#password.form-control(type='password', name='password', placeholder='Password')
+        .form-group
+          button.btn.btn-primary(type='submit') Log In
+  link(href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css')
+  script
+    $.backstretch('images/rains.jpg')

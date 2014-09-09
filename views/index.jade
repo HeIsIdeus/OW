@@ -1,0 +1,38 @@
+extends layout
+
+block body
+
+  #welcome.jumbotron
+    h1 Welcome to Openwindow
+    p.lead.
+      <br/>
+      <br/>
+      Welcome to this gloriously simple <a href="http//www.openwindow.co">Openwindow</a>
+      app!
+    ul
+      li First, take a look through this site.
+      li.
+        Then, check out this project's source code
+        <a href="https://github.com/HeIsIdeus">on GitHub</a>.
+      li Lastly, integrate Openwindow into your own sites!
+    <br/>
+    <br/>
+    h2 What this Simple App Demonstrates
+    br
+    p.
+      This simple app demonstrates how easy it is to register, login, and
+      securely authenticate users on Openwindow.
+    p.
+      Aren't a Openwindow user yet?
+      <a href="http://openwindow.co">Go signup now!</a>
+    p.
+      <b>NOTE</b>:
+      This app will NOT work until you have gone through the bootstrapping
+      instructions found in this project's <code>README.md</code> file. For more
+      information, please follow the guide on this project's
+      <a href="https://github.com/stormpath/stormpath-express-sample">GitHub page</a>.
+    <link href='http://fonts.googleapis.com/css?family=Halant:300' rel='stylesheet' type='text/css'>
+    p.bigbutton
+      a.bigbutton.btn.btn-lg.btn-danger(href='/register', role='button') Register
+    script
+      $.backstretch('images/bird.jpg')
